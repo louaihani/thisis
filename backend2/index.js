@@ -14,6 +14,6 @@ app.post("/addUser" ,async (req,res)=>{
 await user.save();
 res.json({message:"good"})
 })
-app.listen(4000, ()=>{
+app.listen(process.env.Port ||4000, ()=>{
     console.log("listening");
 })
