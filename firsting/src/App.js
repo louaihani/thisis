@@ -5,7 +5,7 @@ import { useState } from "react";
     let [name , setName] = useState();
     let password = "hani";
     function send(){
-axios.post("http://localhost:4000/addUser", {name, password}).catch((e)=>{console.log("error axios",e)}).then((res)=>{alert(res.data.message)})
+axios.post("https://backend2-gzhx.onrender.com/addUser", {name, password}).catch((e)=>{console.log("error axios",e)}).then((res)=>{alert(res.data.message)})
     }
    
     return(  
